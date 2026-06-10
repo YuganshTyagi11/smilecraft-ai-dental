@@ -96,7 +96,7 @@ function Hero() {
       <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 size-[900px] rounded-full radial-spot blur-3xl animate-aurora bg-[linear-gradient(120deg,#1e3a8a_0%,#0ea5e9_50%,#7c3aed_100%)] opacity-40" />
       <div className="pointer-events-none absolute -bottom-20 right-0 size-[500px] rounded-full bg-gradient-to-br from-cyan-glow/20 to-brand/10 blur-3xl" />
 
-      <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-28 lg:pt-28 lg:pb-36">
+      <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-20 lg:pt-20 lg:pb-28">
         <div className="grid gap-16 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <div className="animate-fade-up">
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-white/80 backdrop-blur">
@@ -210,16 +210,16 @@ function LogoMarquee() {
 /* ---------- Bento features ---------- */
 function BentoFeatures() {
   return (
-    <section id="features" className="relative py-28">
+    <section id="features" className="relative py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-14 max-w-2xl">
+        <div className="mb-10 max-w-2xl">
           <span className="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Why SmileCraft</span>
-          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-5xl">
+          <h2 className="mt-3 font-display text-3xl font-bold tracking-tight lg:text-4xl">
             Built for the <span className="text-gradient">modern patient</span>.
           </h2>
         </div>
 
-        <div className="grid auto-rows-[180px] gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid auto-rows-[180px] gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {/* Large: AI */}
           <BentoCard className="sm:col-span-2 lg:col-span-2 lg:row-span-2 overflow-hidden">
             <div className="absolute inset-0">
@@ -309,25 +309,25 @@ function Icon({ children }: { children: React.ReactNode }) {
 /* ---------- AI section ---------- */
 function AIAssistantSection() {
   return (
-    <section id="ai" className="relative py-28">
+    <section id="ai" className="relative py-16">
       <div className="absolute inset-0 grid-bg opacity-40 [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_80%)]" />
       <div className="absolute left-1/2 top-0 -translate-x-1/2 size-[600px] rounded-full bg-brand/15 blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="rounded-[28px] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-2 backdrop-blur-xl">
           <div className="grid lg:grid-cols-[1fr_1.05fr]">
-            <div className="p-8 lg:p-14">
-              <div className="inline-flex items-center gap-2 rounded-full border border-cyan-glow/30 bg-cyan-glow/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-cyan-glow">
-                AI Dental Assistant
-              </div>
-              <h2 className="mt-6 font-display text-4xl font-bold leading-tight lg:text-5xl">
-                Got a <span className="text-gradient">toothache?</span>
-                <br />Ask away.
-              </h2>
-              <p className="mt-5 max-w-[44ch] text-white/65">
+              <div className="p-6 lg:p-10">
+                <div className="inline-flex items-center gap-2 rounded-full border border-cyan-glow/30 bg-cyan-glow/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-cyan-glow">
+                  AI Dental Assistant
+                </div>
+                <h2 className="mt-4 font-display text-3xl font-bold leading-tight lg:text-4xl">
+                  Got a <span className="text-gradient">toothache?</span>
+                  <br />Ask away.
+                </h2>
+                <p className="mt-3 max-w-[44ch] text-white/65">
                 Describe what you feel — "sharp pain when drinking cold water" — and our AI explains
                 possible causes in plain language and recommends what to do next.
               </p>
-              <ul className="mt-8 space-y-3 text-sm">
+              <ul className="mt-5 space-y-2 text-sm">
                 {[
                   "Plain-English explanations of symptoms",
                   "Urgency assessment & next-step guidance",
@@ -364,12 +364,12 @@ const TREATMENTS = [
 
 function Treatments() {
   return (
-    <section id="treatments" className="relative py-28">
+    <section id="treatments" className="relative py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="flex flex-col items-start justify-between gap-6 pb-12 lg:flex-row lg:items-end">
+        <div className="flex flex-col items-start justify-between gap-4 pb-8 lg:flex-row lg:items-end">
           <div className="max-w-xl">
             <span className="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Treatments</span>
-            <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-5xl">
+            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight lg:text-4xl">
               Comprehensive <span className="text-gradient">oral care</span>.
             </h2>
             <p className="mt-4 text-white/60">
@@ -409,17 +409,17 @@ const CASES = [
 
 function SmileGallery() {
   return (
-    <section id="gallery" className="relative py-28">
+    <section id="gallery" className="relative py-16">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand/40 to-transparent" />
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Smile gallery</span>
-          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-5xl">
+          <h2 className="mt-3 font-display text-3xl font-bold tracking-tight lg:text-4xl">
             Proven <span className="text-gradient">transformations</span>.
           </h2>
-          <p className="mt-4 text-white/60">Real before-and-after results from patients in our care.</p>
+          <p className="mt-2 text-white/60">Real before-and-after results from patients in our care.</p>
         </div>
-        <div className="mt-16 grid gap-10 sm:grid-cols-2">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {CASES.map((c) => (
             <figure key={c.title} className="group relative">
               <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-3">
@@ -457,15 +457,15 @@ const DENTISTS = [
 
 function Dentists() {
   return (
-    <section id="dentists" className="relative py-28">
+    <section id="dentists" className="relative py-16">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mb-12 max-w-xl">
+        <div className="mb-8 max-w-xl">
           <span className="text-xs font-semibold uppercase tracking-widest text-cyan-glow">The team</span>
-          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-5xl">
+          <h2 className="mt-3 font-display text-3xl font-bold tracking-tight lg:text-4xl">
             Meet your <span className="text-gradient">specialists</span>.
           </h2>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {DENTISTS.map((d) => (
             <article key={d.name} className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03]">
               <div className="aspect-[4/5] overflow-hidden">
@@ -487,15 +487,15 @@ function Dentists() {
 /* ---------- Pricing ---------- */
 function PricingEstimator() {
   return (
-    <section id="pricing" className="relative py-28">
+    <section id="pricing" className="relative py-16">
       <div className="absolute inset-0 grid-bg opacity-30 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
       <div className="relative mx-auto max-w-7xl px-6">
-        <div className="mb-12 max-w-2xl">
+        <div className="mb-8 max-w-2xl">
           <span className="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Transparent pricing</span>
-          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-5xl">
+          <h2 className="mt-3 font-display text-3xl font-bold tracking-tight lg:text-4xl">
             Instant <span className="text-gradient">cost estimator</span>.
           </h2>
-          <p className="mt-4 text-white/60">Pick your treatments. See pricing in INR. No hidden fees.</p>
+          <p className="mt-2 text-white/60">Pick your treatments. See pricing in INR. No hidden fees.</p>
         </div>
         <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-2 backdrop-blur-xl">
           <div className="rounded-[20px] bg-surface p-2 text-ink">
@@ -510,16 +510,16 @@ function PricingEstimator() {
 /* ---------- Booking ---------- */
 function BookingSection() {
   return (
-    <section id="book" className="relative py-28">
+    <section id="book" className="relative py-16">
       <div className="absolute left-1/2 top-1/3 -translate-x-1/2 size-[700px] rounded-full bg-brand/15 blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
             <span className="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Book a visit</span>
-            <h2 className="mt-4 font-display text-4xl font-bold tracking-tight lg:text-5xl">
+            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight lg:text-4xl">
               Reserve your <span className="text-gradient">appointment</span>.
             </h2>
-            <p className="mt-5 max-w-[44ch] text-white/65">
+            <p className="mt-3 max-w-[44ch] text-white/65">
               Pick a date, choose a service, and we'll confirm on WhatsApp within minutes.
               First consultation is complimentary.
             </p>
@@ -552,7 +552,7 @@ function Detail({ label, value }: { label: string; value: string }) {
 /* ---------- Footer ---------- */
 function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-night py-20">
+    <footer className="border-t border-white/5 bg-night py-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 md:grid-cols-3">
           <div className="space-y-6">

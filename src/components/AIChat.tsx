@@ -74,7 +74,7 @@ export function AIChat() {
         </div>
         <div>
           <p className="text-sm font-semibold">Dental Assistant</p>
-          <p className="text-xs text-muted-foreground">Online · powered by Lovable AI</p>
+          <p className="text-xs text-muted-foreground">Online · AI-powered dental triage</p>
         </div>
       </div>
 
