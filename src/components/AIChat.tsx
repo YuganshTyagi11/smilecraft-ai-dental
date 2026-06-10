@@ -66,7 +66,7 @@ export function AIChat() {
   ];
 
   return (
-    <div className="flex h-[520px] flex-col rounded-2xl border border-zinc-900/5 bg-white">
+    <div className="flex h-[400px] flex-col rounded-2xl border border-zinc-900/5 bg-white sm:h-[520px]">
       <div className="flex items-center gap-3 border-b border-zinc-900/5 px-5 py-4">
         <div className="relative size-9 rounded-full bg-brand grid place-items-center">
           <span className="text-xs font-semibold text-white">AI</span>

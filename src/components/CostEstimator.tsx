@@ -52,7 +52,7 @@ export function CostEstimator() {
 
   return (
     <div className="grid gap-2 rounded-[24px] bg-white p-2 ring-1 ring-black/5 lg:grid-cols-[1fr_360px]">
-      <div className="p-6 lg:p-10">
+      <div className="p-4 sm:p-6 lg:p-10">
         <h3 className="font-display text-2xl font-medium tracking-tight">Select your treatments</h3>
         <p className="mt-2 text-sm text-muted-foreground">
           Transparent indicative pricing in INR. Final cost depends on clinical assessment.
@@ -88,7 +88,7 @@ export function CostEstimator() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-between rounded-[20px] bg-zinc-900 p-8 text-white">
+      <div className="flex flex-col justify-between rounded-[20px] bg-zinc-900 p-6 text-white sm:p-8">
         <div>
           <p className="text-xs font-semibold uppercase tracking-widest text-white/60">
             Estimated investment
